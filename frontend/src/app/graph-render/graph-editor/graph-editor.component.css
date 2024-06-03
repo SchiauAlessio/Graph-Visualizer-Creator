@@ -81,3 +81,11 @@
 .menu-item button:hover {
   background-color: #575757;
 }
+
+.gradient-text {
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  font-size: 24px;
+}

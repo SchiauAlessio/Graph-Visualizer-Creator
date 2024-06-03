@@ -1,5 +1,5 @@
 <div class="menu">
-  <div class="menu-item">Editor</div>
+  <div class="menu-item gradient-text">Editor</div>
   <div class="menu-item dropdown">Load Sample ▼
     <div class="dropdown-content">
       <a *ngFor="let key of sampleKeys()" (click)="loadSample(key)">{{ key }}</a>
@@ -7,8 +7,8 @@
   </div>
   <div class="menu-item dropdown">Download ▼
     <div class="dropdown-content">
-<!--      <a (click)="downloadGraph('svg')">Download as SVG</a>-->
-<!--      <a (click)="downloadGraph('png')">Download as PNG</a>-->
+      <a (click)="downloadGraph('jpg')">Download as JPG</a>
+      <a (click)="downloadGraph('png')">Download as PNG</a>
     </div>
   </div>
 
