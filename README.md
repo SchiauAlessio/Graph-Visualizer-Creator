@@ -32,4 +32,4 @@ To run the Angular Graph Editor:
 
 This project is licensed under the [MIT License](LICENSE).
 
-For more information, please refer to the [Graphviz Documentation](https://graphviz.org/documentation/) or [report any issues](https://github.com/ellson/graphviz/issues).
+For more information, please refer to the [Graphviz Documentation](https://graphviz.org/documentation/) or [report any issues](https://github.com/SchiauAlessio/Graph-Visualizer-Creator/issues).
