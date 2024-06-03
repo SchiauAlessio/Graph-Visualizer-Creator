@@ -1,0 +1,34 @@
+<div class="menu">
+  <div class="menu-item">Editor</div>
+  <div class="menu-item dropdown">Load Sample ▼
+    <div class="dropdown-content">
+      <a *ngFor="let key of sampleKeys()" (click)="loadSample(key)">{{ key }}</a>
+    </div>
+  </div>
+  <div class="menu-item dropdown">Download ▼
+    <div class="dropdown-content">
+<!--      <a (click)="downloadGraph('svg')">Download as SVG</a>-->
+<!--      <a (click)="downloadGraph('png')">Download as PNG</a>-->
+    </div>
+  </div>
+
+  <div class="menu-item dropdown"> Engine: {{engine}}
+    <div class="dropdown-content">
+      <a (click)="setEngine('dot')">dot</a>
+      <a (click)="setEngine('fdp')">fdp</a>
+      <a (click)="setEngine('neato')">neato</a>
+      <a (click)="setEngine('osage')">osage</a>
+      <a (click)="setEngine('circo')">circo</a>
+      <a (click)="setEngine('twopi')">twopi</a>
+    </div>
+  </div>
+  <div class="menu-item"><a href="https://graphviz.org/documentation/" target="_blank">Graphviz Documentation</a></div>
+  <div class="menu-item"><a href="https://github.com/ellson/graphviz/issues" target="_blank">Issues</a></div>
+</div>
+
+<div class="container">
+  <div class="editor">
+    <textarea [(ngModel)]="graphvizCode" (input)="renderGraph()"></textarea>
+  </div>
+  <div class="viewer" id="graph"></div>
+</div>
